@@ -3,42 +3,22 @@
 <head>
   <title>리그 오브 레전드 / 챔피언</title>
   <meta charset="utf-8">
-  <style>
-    a {
-      color:black;
-      text-decoration: none;
-    }
-    #active {
-      color:red;
-    }
-    .saw {
-      color: gray;
-    }
-    h2 {
-      color:seagreen;
-    }
-    h1 {
-      font-size: 45px;
-      text-align: center;
-    }
-  </style>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5SBTXJNBRP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-5SBTXJNBRP');
-</script>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="다크모드.js"></script>
 </head>
 <body>
+  <div id="legend">
   <h1><a href="index.html">리그 오브 레전드</a></h1>
+  <input type="button" value="다크모드" onclick="다크모드(this);  
+  ">
+ <div id="grid">
   <ol>
-    <li><a href="1.html" class="saw">리그 오브 레전드 / 모드</a></li>
-    <li><a href="2.html" class="saw" id="active">리그 오브 레전드 / 챔피언</a></li>
+    <li><a href="1.html">리그 오브 레전드 / 모드</a></li>
+    <li><a href="2.html">리그 오브 레전드 / 챔피언</a></li>
     <li><a href="3.html">리그 오브 레전드 / 아이템</a></li>
   </ol>
+  <div id="article">
   <h2>리그 오브 레전드 / 챔피언</h2>
   <img src='https://ifh.cc/g/TlmiHh.jpg' width="300" >
   <p>챔피언(Champion). 리그 오브 레전드의 주인공들이자 플레이어블 캐릭터.
@@ -48,6 +28,9 @@
   </p><p>게임 내적으로 보자면 아펠리오스를 제외한 모든 챔피언은 패시브 스킬에 더해 스킬의 단축키에 따라 Q, W, E, R(궁극기)에 할당된 4개 이상의 스킬을 가지고 있다. 그리고 골드를 벌어 아이템을 통해 성장한다는 개념 자체는 모든 챔피언이 일치한다. 일반 게임에서는 같은 팀 내에서 동일한 챔피언이 나올 수 없고, 랭크 게임에서는 더 나아가 상대팀과 같은 챔피언을 선택할 수 없는 "고유한" 존재이다.
     
   </p><p>게임 외적으로 보자면 리그 오브 레전드의 챔피언 빠른 발매 주기는 리그 오브 레전드의 주요 컨텐츠이다. 초창기부터 2013 시즌 즈음까지는 무려 2주에 신규 챔피언 하나씩을 찍어냈을 정도. 그러다가 2014년 이후 '신규' 챔피언 발매 수는 매년 대여섯 명 남짓으로 줄어들었고, 2018년에는 3명까지 떨어지기도 했으나 그만큼 기존 챔피언을 리메이크해주기 때문에 체감 발매 주기는 여전히 빠르다고 볼 수 있다. 예전에 비하면 둔화되긴 했지만 타 AOS 게임들과 비교했을 때 여전히 빠른 편으로 새로운 챔피언의 출시나 구 챔피언의 리메이크 등 챔피언 자체에 대해 커뮤니티에서 평가하는 것을 즐기는 유저들이 많다. 또한 몇몇 챔피언의 경우 몰입감이 크고 고유한 캐릭터로서의 즐길 거리가 많아 게임 밖에서도 창작이나 연구가 활발하다.</p>
+  </div>
+  </div>
+ </div>
   <p>
     <div id="disqus_thread"></div>
 <script>
