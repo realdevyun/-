@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <h1>object</h1>
+    <h2>create</h2>
+    <script>
+        var family={
+            "daddy":"leo",
+            "mommy":"veronica"
+            };
+            document.write("daddy : " + family.daddy+'<br>');
+            document.write("mommy : " + family.mommy+'<br>');
+            family.sonny='john';
+            document.write("sonny : "+family.sonny+'<br>');
+            family['last daughter']='maria';
+            document.write("last daughter : "+family['last daughter']+'<br>');
+    </script>
+    <h2>iterate</h2>
+    <script>
+        for(var key in family){
+            document.write(key+' : '+family[key]+'<br>');
+        }
+    </script>
+    <h2>property & method</h2>
+    <script>
+        family.everybody=function(){
+            for(var key in this){
+            document.write(key+' : '+this[key]+'<br>');
+        }
+        }
+        family.everybody();
+    </script>
+</body>
+</html>
